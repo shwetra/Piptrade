@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+#filters{
+
+
+  background-color: #F6F6F6;
+
+
+}
+#logo{
+
+  margin-bottom: -50px;
+  margin-top: -50px;
+}
+#chart{
+  color: blue;
+  background-color:skyblue;
+}
