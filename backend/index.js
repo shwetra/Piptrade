@@ -25,7 +25,7 @@ app.post('/alldata', async (req, res) => {
 
 app.get('/alldata', async (req, res) => {
     try {
-        const allData = await DataModel.find();
+        const allData = await DataModel.find().maxTimeMS(30000);;
         res.status(200).json({ data: allData });
     } catch (error) {
         console.error('Error retrieving data:', error);
